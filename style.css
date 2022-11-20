@@ -244,3 +244,34 @@ span.title {
 footer {
     height: 980px;
 }
+
+footer .title {
+    font-family: 'Montserrat';
+    font-size: 31px;
+    color: #343434;
+}
+
+footer .desc {
+    font-family: 'Montserrat';
+    font-size: 23px;
+    color: #343434;
+}
+
+footer ul li svg {
+    background: #343434;
+    border-radius: 25rem;
+    padding: 6px;
+}
+
+footer .col h4 {
+    font-family: 'Montserrat';
+    font-size: 31px;
+    color: #343434;
+}
+
+footer .col ul li a {
+    font-family: 'Montserrat';
+    font-size: 23px;
+    line-height: 41.76px;
+    color: #343434;
+}
