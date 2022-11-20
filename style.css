@@ -4,6 +4,45 @@
 }
 
 
+/* main block */
+
+.main-block {
+    background: url('img/main-block-bg.png') no-repeat;
+    background-size: cover;
+    height: 900px;
+}
+
+.main-block nav ul li a {
+    color: #fff;
+    font-family: 'Open Sans';
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.main-block nav ul li {
+    list-style-type: none;
+}
+
+.main-block nav ul li .search {
+    border-radius: 20rem;
+    width: 183px;
+    height: 51px;
+    background: #fff;
+    margin-left: 1rem;
+}
+
+.main-block nav ul li svg {
+    margin-right: 20px;
+}
+
+.main-block input[type='search'] {
+    border: none;
+    outline: none;
+    width: 120px;
+}
+
+
 /* menu block */
 
 h2.title {
@@ -225,21 +264,29 @@ span.title {
 }
 
 .subscribe-block input {
-    height: 81px;
+    height: 83.5px;
     width: 659px;
     border-radius: 20rem;
     font-family: 'Open Sans';
     font-size: 25px;
 }
 
+.subscribe-block input:focus {
+    box-shadow: none;
+    border: 0px;
+}
+
 .subscribe-block .btn-primary {
     font-family: 'Open Sans';
     font-weight: bold;
     font-size: 25px;
-    padding: 22px 41px;
+    padding: 23px 41px;
     letter-spacing: normal;
-    right: 15%;
+    right: 16%;
 }
+
+
+/* footer block */
 
 footer {
     height: 980px;
