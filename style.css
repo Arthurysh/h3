@@ -1,0 +1,246 @@
+@font-face {
+    font-family: "Reey";
+    src: url("fonts/Reey-Regular.otf");
+}
+
+
+/* menu block */
+
+h2.title {
+    font-family: "Reey";
+    font-size: 75px;
+    color: #222328;
+    line-height: 150px;
+}
+
+p.desc,
+span.title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 27px;
+    color: #2f3135;
+    font-weight: normal;
+}
+
+.menu-block img {
+    max-width: 316px;
+}
+
+.menu-block .title-item {
+    color: #343434;
+    font-size: 29px;
+    font-weight: bold;
+}
+
+.menu-block .desc-item {
+    color: #343434;
+    font-size: 23px;
+    font-weight: normal;
+}
+
+.plate {
+    -webkit-box-shadow: 0px 25px 23px 0px rgba(12, 13, 12, 0.35);
+    -moz-box-shadow: 0px 25px 23px 0px rgba(12, 13, 12, 0.35);
+    box-shadow: 0px 25px 23px 0px rgba(12, 13, 12, 0.35);
+    border-radius: 90rem;
+}
+
+.btn-primary {
+    background: #343434;
+    border-radius: 25rem;
+    font-size: 23px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    padding: 24px 80px;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #000000;
+    border-radius: 25rem;
+    font-size: 23px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    padding: 24px 80px;
+}
+
+
+/* about us block */
+
+.about-us-block {
+    background: #27292c;
+}
+
+.about-us-block h2 {
+    color: #fff;
+}
+
+.about-us-block .desc {
+    color: #fff;
+    font-size: 27px;
+    font-family: 'Montserrat';
+}
+
+.about-us-block .btn-primary {
+    background: #fff;
+    color: #27292c;
+    border-radius: 30px;
+    font-family: 'Montserrat';
+    font-style: bold;
+    font-size: 27px;
+    letter-spacing: normal;
+    padding: 19px 56px;
+}
+
+.about-us-block .btn-primary:hover {
+    background: #000;
+    color: #fff;
+}
+
+
+/* discount block */
+
+.discount-block img {
+    max-width: 613px;
+}
+
+.discount-block h3 {
+    font-family: 'Open Sans';
+    font-size: 58px;
+    font-weight: bold;
+    line-height: 57px;
+}
+
+.discount-block desc {
+    font-family: 'Open Sans';
+    font-size: 29px;
+    line-height: 29px;
+}
+
+.discount-block .btn-primary {
+    background: #27292c;
+    font-size: 29px;
+    padding: 26px 60px;
+}
+
+.discount-block .btn-primary:hover {
+    background: #000;
+}
+
+.discount-block .text-block {
+    max-width: 613px;
+}
+
+
+/* pizza block */
+
+.pizza-block {
+    background: url('img/pizza-bg.jpg') no-repeat;
+    background-size: cover;
+    height: 1082px;
+}
+
+.pizza-block .title {
+    color: #fff;
+    font-size: 58px;
+}
+
+.pizza-block .desc {
+    font-family: 'Montserrat';
+    font-size: 25px;
+    color: #fff;
+}
+
+.pizza-block hr {
+    color: #fafafa;
+    height: 10px;
+    width: 160px;
+    opacity: 1;
+}
+
+.pizza-block .leaves {
+    top: 23%;
+    max-width: 100%;
+}
+
+.pizza-block .pizza {
+    left: 30%;
+}
+
+
+/* reviews block */
+
+.reviews-block .title {
+    font-size: 42px;
+    line-height: 42px;
+}
+
+.reviews-block .desc {
+    font-size: 19px;
+    color: #333d42;
+}
+
+.reviews-block .author-name {
+    font-size: 21px;
+    font-weight: bold;
+    color: #3f3f3f;
+}
+
+.reviews-block .text-review {
+    font-size: 25px;
+    font-weight: 400;
+    color: #3f3f3f;
+    max-width: 792px;
+}
+
+
+/* subscribe block */
+
+.subscribe-block {
+    background: #27292c;
+    height: 800px;
+}
+
+.subscribe-block .leaves {
+    right: 0;
+    top: 60%;
+    max-width: 100%;
+}
+
+.subscribe-block h2 {
+    font-family: 'Open Sans';
+    font-weight: bold;
+    color: #fff;
+    font-size: 75px;
+    line-height: 60px;
+}
+
+.subscribe-block p {
+    font-family: 'Open Sans';
+    font-weight: normal;
+    color: #fff;
+    font-size: 29px;
+    max-width: 890px;
+}
+
+.subscribe-block input {
+    height: 81px;
+    width: 659px;
+    border-radius: 20rem;
+    font-family: 'Open Sans';
+    font-size: 25px;
+}
+
+.subscribe-block .btn-primary {
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size: 25px;
+    padding: 22px 41px;
+    letter-spacing: normal;
+    right: 15%;
+}
+
+footer {
+    height: 980px;
+}
