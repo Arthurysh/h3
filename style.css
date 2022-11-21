@@ -4,12 +4,11 @@
 }
 
 
-/* main block */
+/* header */
 
 .main-block {
     background: url('img/main-block-bg.png') no-repeat;
     background-size: cover;
-    height: 900px;
 }
 
 .main-block nav ul li a {
@@ -40,6 +39,59 @@
     border: none;
     outline: none;
     width: 120px;
+}
+
+
+/* main block */
+
+.main-block .logo {
+    max-width: 136px;
+}
+
+.main-block h1 {
+    font-family: 'Reey';
+    font-size: 91.67px;
+    line-height: 160px;
+    color: #fff;
+}
+
+.main-block h3 {
+    font-family: 'Open Sans';
+    font-size: 25px;
+    color: #fff;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.main-block .btn-primary {
+    font-family: 'Open Sans';
+    font-size: 24.98px;
+    font-weight: bolder;
+    letter-spacing: normal;
+    color: #2e3034;
+    background: #eceded;
+    padding: 14px 36px;
+}
+
+.main-block .btn-primary:hover {
+    font-family: 'Open Sans';
+    font-size: 24.98px;
+    font-weight: bolder;
+    background: #2e3034;
+    color: #eceded;
+    padding: 14px 36px;
+}
+
+.main-block .desc {
+    font-family: 'Open Sans';
+    font-size: 20.83px;
+    font-style: italic;
+    color: #fff;
+}
+
+.main-block .leaves-bg-main {
+    bottom: -18%;
 }
 
 
@@ -205,6 +257,7 @@ span.title {
 
 .pizza-block .pizza {
     left: 30%;
+    max-width: 100%;
 }
 
 
