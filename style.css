@@ -419,16 +419,25 @@ footer ul li svg {
     padding: 6px;
 }
 
-footer .col h4 {
+footer .row h4 {
     font-family: 'Montserrat';
     font-size: 31px;
     color: #343434;
     font-weight: 400;
 }
 
-footer .col ul li a {
+footer .row ul li a {
     font-family: 'Montserrat';
     font-size: 23px;
     line-height: 41.76px;
     color: #343434;
+}
+
+@media (max-width: 768px) {
+    h2.title {
+        font-size: 45px;
+    }
+    .main-block h1 {
+        font-size: 60px;
+    }
 }
