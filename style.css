@@ -6,11 +6,6 @@
 
 /* header */
 
-.main-block {
-    background: url('img/main-block-bg.png') no-repeat;
-    background-size: cover;
-}
-
 .main-block nav ul li a {
     color: #fff;
     font-family: 'Open Sans';
@@ -25,24 +20,61 @@
 
 .main-block nav ul li .search {
     border-radius: 20rem;
-    width: 183px;
     height: 51px;
     background: #fff;
     margin-left: 1rem;
+    padding-left: 5px;
 }
 
 .main-block nav ul li svg {
-    margin-right: 20px;
+    margin-right: 30px;
 }
 
 .main-block input[type='search'] {
     border: none;
     outline: none;
     width: 120px;
+    transition: width 2s;
+}
+
+.main-block header .nav-link:hover {
+    text-decoration-line: underline;
+    color: #fff;
+}
+
+.main-block input[type='search']:focus {
+    width: 360px;
+    transition: width 2s;
+}
+
+.scrolled header {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+@media (max-width: 992px) {
+    .scrolled header {
+        background: #fff;
+    }
+    header {
+        background: #fff;
+    }
+    header li a {
+        color: #000 !important;
+    }
+    .nav-item:last-child {
+        display: none;
+    }
 }
 
 
 /* main block */
+
+.main-block {
+    background: url('img/main-block-bg.png') no-repeat;
+    background-size: cover;
+    height: 1056px;
+}
 
 .main-block .logo {
     max-width: 136px;
@@ -71,7 +103,7 @@
     letter-spacing: normal;
     color: #2e3034;
     background: #eceded;
-    padding: 14px 36px;
+    padding: 5.5px 36px;
 }
 
 .main-block .btn-primary:hover {
@@ -80,7 +112,8 @@
     font-weight: bolder;
     background: #2e3034;
     color: #eceded;
-    padding: 14px 36px;
+    padding: 5.5px 36px;
+    letter-spacing: normal;
 }
 
 .main-block .desc {
@@ -91,7 +124,12 @@
 }
 
 .main-block .leaves-bg-main {
-    bottom: -18%;
+    bottom: -20%;
+}
+
+.main-block img.plate-main {
+    max-width: 100%;
+    height: auto;
 }
 
 
@@ -113,7 +151,7 @@ span.title {
 }
 
 .menu-block img {
-    max-width: 316px;
+    max-width: 100%;
 }
 
 .menu-block .title-item {
@@ -142,7 +180,7 @@ span.title {
     font-family: 'Open Sans', sans-serif;
     font-weight: bolder;
     letter-spacing: 5px;
-    padding: 24px 80px;
+    padding: 20px 72px;
     border: none;
 }
 
@@ -154,6 +192,14 @@ span.title {
     font-weight: bolder;
     letter-spacing: 5px;
     padding: 24px 80px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #000;
+}
+
+.carousel-indicators {
+    bottom: -30px;
 }
 
 
@@ -169,19 +215,21 @@ span.title {
 
 .about-us-block .desc {
     color: #fff;
-    font-size: 27px;
+    font-size: 18px;
     font-family: 'Montserrat';
+    word-break: break-all;
+    max-width: 525px;
 }
 
 .about-us-block .btn-primary {
     background: #fff;
     color: #27292c;
-    border-radius: 30px;
+    border-radius: 25px;
     font-family: 'Montserrat';
     font-style: bold;
     font-size: 27px;
     letter-spacing: normal;
-    padding: 19px 56px;
+    padding: 10px 56px;
 }
 
 .about-us-block .btn-primary:hover {
@@ -193,26 +241,28 @@ span.title {
 /* discount block */
 
 .discount-block img {
-    max-width: 613px;
+    max-width: 100%;
+    height: auto;
 }
 
 .discount-block h3 {
     font-family: 'Open Sans';
     font-size: 58px;
     font-weight: bold;
-    line-height: 57px;
+    line-height: 70px;
 }
 
-.discount-block desc {
+.discount-block .desc {
     font-family: 'Open Sans';
     font-size: 29px;
-    line-height: 29px;
+    line-height: 35px;
 }
 
 .discount-block .btn-primary {
     background: #27292c;
     font-size: 29px;
-    padding: 26px 60px;
+    padding: 15px 55px;
+    letter-spacing: 6px;
 }
 
 .discount-block .btn-primary:hover {
@@ -256,8 +306,8 @@ span.title {
 }
 
 .pizza-block .pizza {
-    left: 30%;
     max-width: 100%;
+    margin-left: auto;
 }
 
 
@@ -317,8 +367,8 @@ span.title {
 }
 
 .subscribe-block input {
-    height: 83.5px;
-    width: 659px;
+    height: 64px;
+    width: 320px;
     border-radius: 20rem;
     font-family: 'Open Sans';
     font-size: 25px;
@@ -333,9 +383,15 @@ span.title {
     font-family: 'Open Sans';
     font-weight: bold;
     font-size: 25px;
-    padding: 23px 41px;
+    padding: 14px 41px;
     letter-spacing: normal;
     right: 16%;
+}
+
+@media (max-width: 992px) {
+    .subscribe-block input {
+        width: 100%;
+    }
 }
 
 
@@ -367,6 +423,7 @@ footer .col h4 {
     font-family: 'Montserrat';
     font-size: 31px;
     color: #343434;
+    font-weight: 400;
 }
 
 footer .col ul li a {

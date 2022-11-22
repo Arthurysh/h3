@@ -6,121 +6,195 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap homework</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
     <section class="main-block">
-        <div class="container">
-            <header>
-                <nav class="py-5">
-                    <ul class="d-flex justify-content-end align-items-center ">
-                        <li class="nav-item"><a href="#" class="text-uppercase nav-link">Home</a></li>
-                        <li class="nav-item"><a href="#" class="text-uppercase nav-link">Menu</a></li>
-                        <li class="nav-item"><a href="#" class="text-uppercase nav-link">Our story</a></li>
-                        <li class="nav-item"><a href="#" class="text-uppercase nav-link">Contact us</a></li>
-                        <li class="nav-item">
-                            <div class="search d-flex justify-content-end align-items-center">
-                                <input type="search">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="30px">
+        <div class="container pt-4">
+            <header class="fixed-top">
+                <nav class="py-2 navbar navbar-expand-lg container py-lg-5">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                        <div class="collapse navbar-collapse justify-content-md-end" id="navbarTogglerDemo02">
+                            <ul class="navbar-nav d-flex justify-content-end align-items-center">
+                                <li class="nav-item"><a href="#" class="text-uppercase nav-link px-4">Home</a></li>
+                                <li class="nav-item"><a href="#menu-block" class="text-uppercase nav-link px-4">Menu</a></li>
+                                <li class="nav-item"><a href="#our-story-block" class="text-uppercase nav-link px-4">Our story</a></li>
+                                <li class="nav-item"><a href="#contact-us" class="text-uppercase nav-link px-4">Contact us</a></li>
+                                <li class="nav-item px-3">
+                                    <div class="search d-flex justify-content-end align-items-center">
+                                        <input type="search">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="30px">
                             <path fill-rule="evenodd"  fill="rgb(52, 52, 52)" d="M20.899,17.800 C24.572,12.715 23.344,5.674 18.157,2.73 C12.970,-1.526 5.788,0.322 2.116,4.763 C-1.556,9.848 0.328,16.888 4.859,20.488 C8.561,23.59 13.456,23.256 17.360,20.996 L25.845,29.264 C26.761,30.210 28.285,30.247 29.250,29.349 C30.214,28.452 30.253,26.957 29.337,26.12 C29.308,25.982 29.280,25.954 29.250,25.926 L20.899,17.800 ZM11.501,18.572 C7.402,18.572 4.79,15.317 4.76,11.298 C4.75,7.280 7.396,4.22 11.495,4.20 C15.589,4.19 18.910,7.269 18.918,11.282 C18.925,15.301 15.606,18.564 11.506,18.572 C11.504,18.572 11.503,18.572 11.501,18.572 Z"/>
                            </svg>
-                            </div>
-                        </li>
-                    </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </nav>
             </header>
-            <div class="row main-block-slide">
-                <div class="col px-0">
-                    <img class="logo pb-5" src="img/logo.png" alt="logo">
+            <div class="row main-block-slide pt-5">
+                <div class="col px-0 pt-5 mt-5">
+                    <img class="logo py-4" src="img/logo.png" alt="logo">
                     <h1 class="pb-5">Italian Food</h1>
                     <h3 class="text-uppercase py-5">Loremipsum dolor</h3>
-                    <button class="btn-primary text-uppercase mb-4">Read more</button>
+                    <button class="btn-primary text-uppercase mb-4" onclick="location.href='#our-story-block'">Read more</button>
                     <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do iusmod tempor incididunt ut labore et dolore magna.</p>
                 </div>
-                <div class="col px-0 position-relative">
-                    <img src="img/plate-main-block.png" alt="plate">
-                    <img class="leaves-bg-main position-absolute end-0" src="img/leaves-bg-main.png" alt="leaves">
+                <div class="col-7 px-0 position-relative pt-5 mt-4">
+                    <img src="img/plate-main-block.png" alt="plate" class="pt-5 mt-5 plate-main d-none d-lg-block">
+                    <img class="leaves-bg-main position-absolute end-0 d-none d-lg-block" src="img/leaves-bg-main.png" alt="leaves">
                 </div>
             </div>
         </div>
     </section>
-    <section class="menu-block">
+    <section class="menu-block" id="menu-block">
         <div class="container">
-            <h2 class="title text-center p-5">Lorem Ipsum Dolor</h2>
+            <h2 class="title text-center pt-5 pb-4">Lorem Ipsum Dolor</h2>
             <p class="desc text-center mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Vivamus consectetur adipiscing elit.</p>
-            <div class="row pt-5 justify-content-center">
-                <div class="col-4 d-flex flex-column align-items-center">
-                    <div class="d-flex flex-column align-items-left">
-                        <img src="img/plate1.png" class="plate">
-                        <span class="title-item pt-5 pb-3">Lorem Ipsum</span>
-                        <p class="desc-item">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit</p>
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators pt-3">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row pt-5 justify-content-center">
+                            <div class="col-12 d-flex flex-column align-items-center col-md-4">
+                                <div class="d-flex flex-column align-items-center ps-md-4  px-4  align-items-md-start">
+                                    <img src="img/plate1.png" class="plate">
+                                    <span class="title-item pt-5 pb-3">Lorem Ipsum</span>
+                                    <p class="desc-item">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit</p>
+                                </div>
+                            </div>
+                            <div class="col-4  flex-column align-items-center d-none d-md-flex">
+                                <div class="d-flex flex-column align-items-left px-2 mx-1">
+                                    <img src="img/plate2.png" class="plate">
+                                    <span class="title-item pt-5 pb-3">Lorem Ipsum</span>
+                                    <p class="desc-item">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit</p>
+                                </div>
+                            </div>
+                            <div class="col-4 d-flex flex-column align-items-center d-none d-md-flex">
+                                <div class="d-flex flex-column align-items-left pe-4">
+                                    <img src="img/plate3.png" class="plate">
+                                    <span class="title-item pt-5 pb-3">Lorem Ipsum</span>
+                                    <p class="desc-item">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row pt-5 justify-content-center">
+                            <div class="col-4 d-none flex-column align-items-center d-md-flex">
+                                <div class="d-flex flex-column align-items-left ps-4">
+                                    <img src="img/plate1.png" class="plate">
+                                    <span class="title-item pt-5 pb-3">Lorem Ipsum</span>
+                                    <p class="desc-item">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit</p>
+                                </div>
+                            </div>
+                            <div class="col-12 d-flex flex-column align-items-center col-md-4">
+                                <div class="d-flex flex-column align-items-center px-4 mx-md-1 px-md-2 align-items-md-start">
+                                    <img src="img/plate2.png" class="plate">
+                                    <span class="title-item pt-5 pb-3">Lorem Ipsum</span>
+                                    <p class="desc-item">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit</p>
+                                </div>
+                            </div>
+                            <div class="col-4 d-none flex-column align-items-center d-md-flex">
+                                <div class="d-flex flex-column align-items-left pe-4">
+                                    <img src="img/plate3.png" class="plate">
+                                    <span class="title-item pt-5 pb-3">Lorem Ipsum</span>
+                                    <p class="desc-item">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row pt-5 justify-content-center">
+                            <div class="col-4 d-none flex-column align-items-center d-md-flex">
+                                <div class="d-flex flex-column align-items-left ps-4">
+                                    <img src="img/plate1.png" class="plate">
+                                    <span class="title-item pt-5 pb-3">Lorem Ipsum</span>
+                                    <p class="desc-item">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit</p>
+                                </div>
+                            </div>
+                            <div class="col-4 d-none flex-column align-items-center d-md-flex">
+                                <div class="d-flex flex-column align-items-left px-2">
+                                    <img src="img/plate2.png" class="plate">
+                                    <span class="title-item pt-5 pb-3">Lorem Ipsum</span>
+                                    <p class="desc-item">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit</p>
+                                </div>
+                            </div>
+                            <div class="col-12 d-flex flex-column align-items-center col-md-4">
+                                <div class="d-flex flex-column align-items-center px-4 pe-md-4 align-items-md-start">
+                                    <img src="img/plate3.png" class="plate">
+                                    <span class="title-item pt-5 pb-3">Lorem Ipsum</span>
+                                    <p class="desc-item">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-4 d-flex flex-column align-items-center">
-                    <div class="d-flex flex-column align-items-left">
-                        <img src="img/plate2.png" class="plate">
-                        <span class="title-item pt-5 pb-3">Lorem Ipsum</span>
-                        <p class="desc-item">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit</p>
-                    </div>
-                </div>
-                <div class="col-4 d-flex flex-column align-items-center">
-                    <div class="d-flex flex-column align-items-left">
-                        <img src="img/plate3.png" class="plate">
-                        <span class="title-item pt-5 pb-3">Lorem Ipsum</span>
-                        <p class="desc-item">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit</p>
-                    </div>
-                </div>
+            </div>
+            <div class="d-flex justify-content-center">
                 <buttom class="btn btn-primary mt-5 text-uppercase w-auto mb-5">Show more</buttom>
             </div>
         </div>
     </section>
-    <section class="about-us-block">
-        <div class="container d-flex align-items-center flex-column">
+    <section class="about-us-block" id="our-story-block">
+        <div class="container d-flex align-items-center flex-column py-3">
             <h2 class="title text-center my-5 h-auto">Lorem Ipsum Dolor</h2>
-            <div class="row gx-5">
+            <div class="row gx-5 mb-4">
                 <p class="col-6 desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <p class="col-6 desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-            <buttom class="btn btn-primary mt-5 text-uppercase w-auto mb-5">More info</buttom>
+            <buttom class="btn btn-primary text-uppercase w-auto my-5">More info</buttom>
         </div>
     </section>
     <section class="discount-block">
-        <div class="row py-5 gx-0">
-            <div class="col-6 d-flex justify-content-end"><img src="img/plate3.png" class="plate mx-5"></div>
-            <div class="col-6 d-flex flex-column justify-content-center">
-                <div class="text-block">
-                    <h3 class="mb-0">Discount up to<br> 50% All Excursions</h3>
-                    <p class="desc my-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    <div>
-                        <buttom class="btn btn-primary text-uppercase w-auto">Read more</buttom>
+        <div class="container">
+            <div class="row py-5 gx-0">
+                <div class="col justify-content-end d-none d-lg-flex"><img src="img/plate3.png" class="plate mx-5"></div>
+                <div class="col d-flex flex-column justify-content-center">
+                    <div class="text-block">
+                        <h3 class="mb-0">Discount up to<br> 50% All Excursions</h3>
+                        <p class="desc my-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        <div>
+                            <buttom class="btn btn-primary text-uppercase w-auto mt-3">Read more</buttom>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row py-5 gx-0">
-            <div class="col-6 d-flex flex-column justify-content-center align-items-end">
-                <div class="text-block">
-                    <h3 class="mb-0 ">Discount up to<br> 50% All Excursions</h3>
-                    <p class="desc my-4 ">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    <div>
-                        <buttom class="btn btn-primary text-uppercase w-auto ">Read more</buttom>
+            <div class="row py-5 gx-0">
+                <div class="col d-flex flex-column justify-content-center align-items-end">
+                    <div class="text-block">
+                        <h3 class="mb-0 ">Discount up to<br> 50% All Excursions</h3>
+                        <p class="desc my-4 ">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                        <div>
+                            <buttom class="btn btn-primary text-uppercase w-auto mt-4 font-weight-normal">Read more</buttom>
+                        </div>
                     </div>
                 </div>
+                <div class="col d-flex justify-content-start d-none d-lg-block"><img src="img/plate2.png " class="plate"></div>
             </div>
-            <div class="col-6 d-flex justify-content-start"><img src="img/plate2.png " class="plate mx-5 "></div>
         </div>
     </section>
     <section class="pizza-block pt-5 position-relative">
-        <img src="img/leaves-bg.png " class="position-absolute d-block translate-middle start-50 leaves">
-        <h2 class="title text-center pt-5 pb-3 ">Lorem Ipsum Dolor Sit Amer</h2>
-        <p class="desc text-center ">Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br>sed do eiusmod tempor incididunt ut labore et dolore</p>
-        <hr class="mx-auto mt-4">
-        <img src="img/pizza.png" class="position-relative end-10 pizza">
+        <div class="container">
+            <img src="img/leaves-bg.png " class="position-absolute translate-middle start-50 leaves d-none d-lg-block">
+            <h2 class="title text-center pt-5 pb-3 ">Lorem Ipsum Dolor Sit Amer</h2>
+            <p class="desc text-center ">Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br>sed do eiusmod tempor incididunt ut labore et dolore</p>
+            <hr class="mx-auto mt-4">
+            <img src="img/pizza.png" class="position-relative  pizza d-block">
+        </div>
     </section>
     <section class="reviews-block pb-5">
         <div class="container">
@@ -144,14 +218,17 @@
             </div>
         </div>
     </section>
-    <section class="subscribe-block position-relative mt-5">
-        <img src="img/leaves-bg-sub.png" class="position-absolute translate-middle start-50 leaves">
+    <section class="subscribe-block position-relative mt-5" id="contact-us">
+        <img src="img/leaves-bg-sub.png" class="position-absolute translate-middle start-50 leaves d-none d-lg-block">
         <div class="container d-flex flex-column h-100 justify-content-center">
             <h2 class="text-center">Title Here</h2>
             <p class="text-center mx-auto my-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
             <form class="position-relative">
-                <input type="email" class="form-control mx-auto px-5" placeholder="Your Email" required>
-                <button type="submit" class="btn btn-primary text-uppercase position-absolute top-0">Subscribe</button>
+                <div class="row justify-content-between justify-content-lg-center">
+                    <input type="email" class="col-12 col-md-4 col-xxl-5 form-control px-5" placeholder="Your Email" required>
+                    <input type="text" class="col-12 col-md-4 col-xxl-5 form-control px-5 mt-5 mx-lg-2 mt-lg-0" placeholder="Your Name" title="Only spaces and latin letters are allowed" pattern="^[a-zA-Z\s]+$" required>
+                    <button type="submit" class="col-12 col-md col-xxl-2 btn btn-primary text-uppercase mt-5 mt-lg-0">Subscribe</button>
+                </div>
             </form>
         </div>
     </section>
@@ -230,6 +307,21 @@
             </div>
         </div>
     </footer>
+    <script>
+        var minOffset = 50;
+        window.onscroll = function() {
+            let has_class = document.body.classList.contains("scrolled");
+
+            if (minOffset < document.documentElement.scrollTop) {
+                if (!has_class) {
+                    document.body.classList.add("scrolled");
+                }
+            } else if (has_class) {
+                document.body.classList.remove("scrolled")
+
+            }
+        }
+    </script>
 </body>
 
 </html>
