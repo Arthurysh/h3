@@ -3,12 +3,13 @@
     src: url("fonts/Reey-Regular.otf");
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 /* header */
 
 .main-block nav ul li a {
     color: #fff;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-size: 17px;
     font-weight: bold;
     letter-spacing: 2px;
@@ -88,7 +89,8 @@
 }
 
 .main-block h3 {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
+    ;
     font-size: 25px;
     color: #fff;
     letter-spacing: 3px;
@@ -97,7 +99,8 @@
 }
 
 .main-block .btn-primary {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
+    ;
     font-size: 24.98px;
     font-weight: bolder;
     letter-spacing: normal;
@@ -107,7 +110,8 @@
 }
 
 .main-block .btn-primary:hover {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
+    ;
     font-size: 24.98px;
     font-weight: bolder;
     background: #2e3034;
@@ -117,7 +121,8 @@
 }
 
 .main-block .desc {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
+    ;
     font-size: 20.83px;
     font-style: italic;
     color: #fff;
@@ -216,7 +221,8 @@ span.title {
 .about-us-block .desc {
     color: #fff;
     font-size: 18px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
+    ;
     word-break: break-all;
     max-width: 525px;
 }
@@ -225,7 +231,8 @@ span.title {
     background: #fff;
     color: #27292c;
     border-radius: 25px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
+    ;
     font-style: bold;
     font-size: 27px;
     letter-spacing: normal;
@@ -246,14 +253,16 @@ span.title {
 }
 
 .discount-block h3 {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
+    ;
     font-size: 58px;
     font-weight: bold;
     line-height: 70px;
 }
 
 .discount-block .desc {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
+    ;
     font-size: 29px;
     line-height: 35px;
 }
@@ -288,7 +297,8 @@ span.title {
 }
 
 .pizza-block .desc {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
+    ;
     font-size: 25px;
     color: #fff;
 }
@@ -351,7 +361,8 @@ span.title {
 }
 
 .subscribe-block h2 {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
+    ;
     font-weight: bold;
     color: #fff;
     font-size: 75px;
@@ -359,7 +370,8 @@ span.title {
 }
 
 .subscribe-block p {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
+    ;
     font-weight: normal;
     color: #fff;
     font-size: 29px;
@@ -370,7 +382,8 @@ span.title {
     height: 64px;
     width: 320px;
     border-radius: 20rem;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
+    ;
     font-size: 25px;
 }
 
@@ -380,7 +393,8 @@ span.title {
 }
 
 .subscribe-block .btn-primary {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
+    ;
     font-weight: bold;
     font-size: 25px;
     padding: 14px 41px;
@@ -402,13 +416,15 @@ footer {
 }
 
 footer .title {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
+    ;
     font-size: 31px;
     color: #343434;
 }
 
 footer .desc {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
+    ;
     font-size: 23px;
     color: #343434;
 }
@@ -420,14 +436,16 @@ footer ul li svg {
 }
 
 footer .row h4 {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
+    ;
     font-size: 31px;
     color: #343434;
     font-weight: 400;
 }
 
 footer .row ul li a {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
+    ;
     font-size: 23px;
     line-height: 41.76px;
     color: #343434;
@@ -436,6 +454,7 @@ footer .row ul li a {
 @media (max-width: 768px) {
     h2.title {
         font-size: 45px;
+        line-height: 80px;
     }
     .main-block h1 {
         font-size: 60px;
